@@ -38,6 +38,14 @@ a:focus {
   color: currentColor;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
+a:focus-visible {
+  outline: 1px solid var(--text-color, #312a4e);
+}
+
 button:focus {
   outline: none;
   color: currentColor;
