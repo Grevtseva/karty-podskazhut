@@ -26,12 +26,12 @@ figure {
 }
 
 :root {
---bg-color: #F3EFEC;
---text-color: #312A4E;
---accent-color: #ffab6b;
---main-font: "Raleway", sans-serif;
---accent-font: "STIXTwoText", serif;
-} 
+  --bg-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #ffab6b;
+  --main-font: "Raleway", sans-serif;
+  --accent-font: "STIXTwoText", serif;
+}
 
 a:focus {
   outline: none;
@@ -58,9 +58,7 @@ button:focus {
   --accent-color: transparent;
 }
 
-.theme_dark
-  .content__text-block_type_first-lettered
-  .content__paragraph:first-child::first-letter {
+.theme_dark .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
   background-color: transparent;
   border: 1px solid var(--text-color, #b3b3b3);
 }
@@ -91,7 +89,8 @@ button:focus {
   font-family: var(--accent-font, serif);
   text-align: center;
   font-weight: 600;
-  line-height: 90%; /* 108px */
+  line-height: 90%;
+  /* 108px */
 }
 
 .content-section {
@@ -173,8 +172,7 @@ li:not(:last-child) {
   left: -25px;
 }
 
-.content__text-block_type_first-lettered
-  .content__paragraph:first-child::first-letter {
+.content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
   background-color: var(--accent-color, #ffab6b);
   display: inline-block;
   padding-left: 4px;
@@ -217,11 +215,11 @@ li:not(:last-child) {
   justify-content: center;
 }
 
-.content__card-title{
+.content__card-title {
   font-size: 60px;
 }
 
-.content__card-subtitle{
+.content__card-subtitle {
   font-size: 18px;
   text-align: center;
 }
@@ -243,7 +241,7 @@ li:not(:last-child) {
   top: calc(50% + 0.05em);
 }
 
-.header__menu{
+.header__menu {
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -254,14 +252,14 @@ li:not(:last-child) {
   border-bottom: 1px solid var(--text-color, #312a4e);
 }
 
-.header__theme-toggler{
+.header__theme-toggler {
   display: flex;
   list-style-type: none;
   justify-content: flex-start;
   gap: 8px;
 }
 
-.header__theme-button{
+.header__theme-button {
   border-style: none;
   font-family: inherit;
   color: var(--text-color, #312a4e);
@@ -291,11 +289,11 @@ li:not(:last-child) {
   cursor: pointer;
 }
 
-.header__theme-button_type_light{
+.header__theme-button_type_light {
   margin-right: -5px;
 }
 
-.header__theme-button_is-active{
+.header__theme-button_is-active {
   font-weight: 700;
 }
 
