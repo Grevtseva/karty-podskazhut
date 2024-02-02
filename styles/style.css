@@ -114,6 +114,14 @@ button:focus {
   padding-top: 10%;
 }
 
+.header__logo {
+  cursor: auto;
+}
+
+.header__logo:focus-visible {
+  outline: none;
+}
+
 .content__text-block {
   font-size: 18px;
   font-style: normal;
@@ -145,9 +153,8 @@ button:focus {
   padding-inline-start: 40px;
 }
 
-.content__list {
-  list-style-type: none;
-  padding-inline-start: 40px;
+li:not(:last-child).content__list-item {
+  padding-bottom: 10px;
 }
 
 .content__list-item {
@@ -155,10 +162,6 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-li:not(:last-child) {
-  padding-bottom: 10px;
 }
 
 .content__list-item::before {
@@ -170,6 +173,7 @@ li:not(:last-child) {
   object-position: center;
   position: absolute;
   left: -25px;
+  top: 0px;
 }
 
 .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
@@ -256,7 +260,6 @@ li:not(:last-child) {
   display: flex;
   list-style-type: none;
   justify-content: flex-start;
-  gap: 8px;
 }
 
 .header__theme-button {
@@ -269,6 +272,7 @@ li:not(:last-child) {
   line-height: 104%;
   background-color: inherit;
   position: relative;
+  text-align: center;
 }
 
 .header__theme-button:disabled {
@@ -279,18 +283,9 @@ li:not(:last-child) {
   outline: 1px solid var(--text-color, #312a4e);
 }
 
-.header__theme-button_type_dark:hover {
+.header__theme-button:hover {
   text-decoration: underline;
   cursor: pointer;
-}
-
-.header__theme-button_type_light:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.header__theme-button_type_light {
-  margin-right: -5px;
 }
 
 .header__theme-button_is-active {
