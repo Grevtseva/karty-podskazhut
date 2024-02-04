@@ -33,20 +33,12 @@ figure {
   --accent-font: "STIXTwoText", serif;
 }
 
-a:focus {
-  outline: none;
-}
-
 a:hover {
   cursor: pointer;
 }
 
 a:focus-visible {
   outline: 1px solid var(--text-color, #312a4e);
-}
-
-button:focus {
-  outline: none;
 }
 
 .theme_dark {
@@ -193,7 +185,7 @@ li:not(:last-child).content__list-item {
 }
 
 .content__picture-caption {
-  border-bottom: 1px solid #312a4e;
+  border-bottom: 1px solid var(--text-color, #312a4e);
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
