@@ -49,7 +49,6 @@ button:focus {
   outline: none;
 }
 
-
 .theme_dark {
   --bg-color: #171717;
   --text-color: #b3b3b3;
