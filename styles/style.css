@@ -33,6 +33,11 @@ figure {
   --accent-font: "STIXTwoText", serif;
 }
 
+a:focus, 
+button:focus {
+  outline: none;
+}
+
 a:hover {
   cursor: pointer;
 }
