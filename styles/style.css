@@ -162,7 +162,7 @@ li:not(:last-child).content__list-item {
   object-position: center;
   position: absolute;
   left: -25px;
-  top: 0px;
+  top: center;
 }
 
 .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
